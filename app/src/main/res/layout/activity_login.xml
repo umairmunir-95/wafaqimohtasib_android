@@ -11,10 +11,8 @@
         android:layout_width="@dimen/p200"
         android:layout_height="@dimen/p200"
         android:src="@drawable/logo"
-        android:padding="@dimen/p20"
-        android:layout_margin="@dimen/p20"
-        android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
+        android:visibility="gone"
         />
 
     <EditText

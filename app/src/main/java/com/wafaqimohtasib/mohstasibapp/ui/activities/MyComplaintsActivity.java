@@ -16,6 +16,7 @@ import com.wafaqimohtasib.mohstasibapp.App;
 import com.wafaqimohtasib.mohstasibapp.R;
 import com.wafaqimohtasib.mohstasibapp.ui.viewmodels.ComplaintsVIewModel;
 import com.wafaqimohtasib.mohstasibapp.utils.DialogManager;
+import com.wafaqimohtasib.mohstasibapp.utils.Helpers;
 import com.wafaqimohtasib.mohstasibapp.utils.NetworkManager;
 
 import butterknife.BindView;
@@ -58,11 +59,15 @@ public class MyComplaintsActivity extends AppCompatActivity {
 
     }
 
-    private void callApi()
-    {
-        if(NetworkManager.isNetworkAvailable(MyComplaintsActivity.this))
-        {
-            complaintsVIewModel.getMyComplaints(MyComplaintsActivity.this,progressBar, App.GET_USER_COMPLAINTS,recyclerView);
+    private void callApi() {
+        if (NetworkManager.isNetworkAvailable(MyComplaintsActivity.this)) {
+            if (Helpers.getPreferenceValues(MyComplaintsActivity.this, getResources().getString(R.string.user_type)).equals("admin")) {
+                complaintsVIewModel.getMyComplaints(MyComplaintsActivity.this, progressBar, App.GET_USER_COMPLAINTS, recyclerView);
+            }
+            else
+            {
+                complaintsVIewModel.getMyComplaints(MyComplaintsActivity.this, progressBar, App.GET_USER_COMPLAINTS+Helpers.getPreferenceValues(MyComplaintsActivity.this,getResources().getString(R.string.email)), recyclerView);
+            }
         }
         else
         {
