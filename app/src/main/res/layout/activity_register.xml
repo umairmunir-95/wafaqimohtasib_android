@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/ic_name"
+        android:hint="@string/name"
+        android:singleLine="true"
+        android:inputType="text"
+        style="@style/FormEditText"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/ic_email"
+        android:hint="@string/email"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/et_name"
+        android:layout_marginTop="@dimen/p5"
+        style="@style/FormEditText"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/ic_password"
+        android:hint="@string/password"
+        android:singleLine="true"
+        android:inputType="numberPassword"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="@dimen/p5"
+        style="@style/FormEditText"/>
+
+    <EditText
+        android:id="@+id/et_cnic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/ic_cnic"
+        android:hint="@string/cnic"
+        android:singleLine="true"
+        android:inputType="numberSigned"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="@dimen/p5"
+        android:maxLength="13"
+        style="@style/FormEditText"/>
+
+    <EditText
+        android:id="@+id/et_cell_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/ic_cell"
+        android:hint="@string/cell_no"
+        android:singleLine="true"
+        android:inputType="numberSigned"
+        android:maxLength="11"
+        android:layout_below="@id/et_cnic"
+        android:layout_marginTop="@dimen/p5"
+        style="@style/FormEditText"/>
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/ic_address"
+        android:hint="@string/address"
+        android:singleLine="true"
+        android:inputType="text"
+        android:layout_below="@id/et_cell_no"
+        android:layout_marginTop="@dimen/p5"
+        style="@style/FormEditText"/>
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p40"
+        android:background="@drawable/rounded_button"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:layout_below="@id/et_address"
+        android:layout_marginTop="@dimen/p10"
+        style="@style/FormButtons"
+        />
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_link_text"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:layout_below="@id/btn_register"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/p2"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

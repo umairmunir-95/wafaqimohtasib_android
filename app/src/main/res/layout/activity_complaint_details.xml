@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/common_header"/>
+
+    <ScrollView
+        android:layout_below="@id/common_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:id="@+id/ll_top"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complaintant_name"
+                    android:textSize="@dimen/ts17"
+                    android:padding="@dimen/p10"
+                    android:layout_marginTop="@dimen/p5"
+                    android:layout_marginLeft="@dimen/p5"
+                    android:layout_marginRight="@dimen/p5"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_complaintant_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/p10"
+                    android:layout_marginRight="@dimen/p10"
+                    android:layout_marginTop="@dimen/p5"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableLeft="@drawable/ic_name"
+                    android:drawablePadding="@dimen/p10"
+                    android:hint="@string/complaintant_name"
+                    android:padding="@dimen/p5"
+                    android:singleLine="true"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textSize="@dimen/ts16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complaintant_email"
+                    android:textSize="@dimen/ts17"
+                    android:padding="@dimen/p10"
+                    android:layout_marginLeft="@dimen/p5"
+                    android:layout_marginRight="@dimen/p5"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_complaintant_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/p10"
+                    android:layout_marginRight="@dimen/p10"
+                    android:layout_marginTop="@dimen/p5"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="@dimen/p10"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/complaintant_email"
+                    android:padding="@dimen/p5"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/ts16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:textSize="@dimen/ts17"
+                    android:padding="@dimen/p10"
+                    android:layout_marginLeft="@dimen/p5"
+                    android:layout_marginRight="@dimen/p5"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/p10"
+                    android:layout_marginRight="@dimen/p10"
+                    android:layout_marginTop="@dimen/p5"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableLeft="@drawable/ic_address"
+                    android:drawablePadding="@dimen/p10"
+                    android:hint="@string/address"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:padding="@dimen/p5"
+                    android:singleLine="true"
+                    android:textSize="@dimen/ts16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cnic"
+                    android:textSize="@dimen/ts17"
+                    android:padding="@dimen/p10"
+                    android:layout_marginLeft="@dimen/p5"
+                    android:layout_marginRight="@dimen/p5"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_cnic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/p10"
+                    android:layout_marginRight="@dimen/p10"
+                    android:layout_marginTop="@dimen/p5"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableLeft="@drawable/ic_cnic"
+                    android:drawablePadding="@dimen/p10"
+                    android:hint="@string/cnic"
+                    android:padding="@dimen/p5"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:maxLength="13"
+                    android:singleLine="true"
+                    android:textSize="@dimen/ts16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cell_no"
+                    android:textSize="@dimen/ts17"
+                    android:padding="@dimen/p10"
+                    android:layout_marginLeft="@dimen/p5"
+                    android:layout_marginRight="@dimen/p5"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_cell_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/p10"
+                    android:layout_marginRight="@dimen/p10"
+                    android:layout_marginTop="@dimen/p5"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableLeft="@drawable/ic_cell"
+                    android:drawablePadding="@dimen/p10"
+                    android:hint="@string/cell_no"
+                    android:padding="@dimen/p5"
+                    android:maxLength="11"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:textSize="@dimen/ts16" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city"
+                    android:textSize="@dimen/ts17"
+                    android:padding="@dimen/p10"
+                    android:layout_marginLeft="@dimen/p5"
+                    android:layout_marginRight="@dimen/p5"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_city"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/p10"
+                    android:layout_marginRight="@dimen/p10"
+                    android:layout_marginTop="@dimen/p5"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableLeft="@drawable/ic_city"
+                    android:drawablePadding="@dimen/p10"
+                    android:hint="@string/city"
+                    android:padding="@dimen/p5"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:textSize="@dimen/ts16" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mohtasib_office"
+                    android:textSize="@dimen/ts17"
+                    android:padding="@dimen/p10"
+                    android:layout_marginLeft="@dimen/p5"
+                    android:layout_marginRight="@dimen/p5"
+                    android:textColor="@color/colorPrimary" />
+
+
+                <EditText
+                    android:id="@+id/et_mohtasib_office"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/p10"
+                    android:layout_marginRight="@dimen/p10"
+                    android:layout_marginTop="@dimen/p5"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableLeft="@drawable/ic_office"
+                    android:drawablePadding="@dimen/p10"
+                    android:hint="@string/mohtasib_office"
+                    android:padding="@dimen/p5"
+                    android:singleLine="true"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textSize="@dimen/ts16" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complaint_against"
+                    android:textSize="@dimen/ts17"
+                    android:padding="@dimen/p10"
+                    android:layout_marginLeft="@dimen/p5"
+                    android:layout_marginRight="@dimen/p5"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_against"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/p10"
+                    android:layout_marginRight="@dimen/p10"
+                    android:layout_marginTop="@dimen/p5"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableLeft="@drawable/ic_agency"
+                    android:drawablePadding="@dimen/p10"
+                    android:hint="@string/complaint_against"
+                    android:padding="@dimen/p5"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:textSize="@dimen/ts16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject"
+                    android:textSize="@dimen/ts17"
+                    android:padding="@dimen/p10"
+                    android:layout_marginLeft="@dimen/p5"
+                    android:layout_marginRight="@dimen/p5"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_subject"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/p10"
+                    android:layout_marginRight="@dimen/p10"
+                    android:layout_marginTop="@dimen/p5"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableLeft="@drawable/ic_subject"
+                    android:drawablePadding="@dimen/p10"
+                    android:hint="@string/subject"
+                    android:padding="@dimen/p5"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:textSize="@dimen/ts16" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textSize="@dimen/ts17"
+                    android:padding="@dimen/p10"
+                    android:layout_marginLeft="@dimen/p5"
+                    android:layout_marginRight="@dimen/p5"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/p10"
+                    android:layout_marginRight="@dimen/p10"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="@string/description"
+                    android:padding="@dimen/p10"
+                    android:textSize="@dimen/ts16"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:maxLength="250"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="top"
+                    android:scrollbars="vertical" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textSize="@dimen/ts17"
+                    android:padding="@dimen/p10"
+                    android:layout_marginLeft="@dimen/p5"
+                    android:layout_marginRight="@dimen/p5"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_datetime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/p10"
+                    android:layout_marginRight="@dimen/p10"
+                    android:layout_marginTop="@dimen/p5"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableLeft="@drawable/ic_date"
+                    android:drawablePadding="@dimen/p10"
+                    android:hint="@string/date"
+                    android:padding="@dimen/p5"
+                    android:singleLine="true"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textSize="@dimen/ts16" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/p40"
+                    android:layout_marginLeft="@dimen/p10"
+                    android:layout_marginRight="@dimen/p10"
+                    android:layout_marginTop="@dimen/p10"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginBottom="@dimen/p10">
+
+                    <Button
+                        android:id="@+id/btn_approve"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/p40"
+                        android:layout_marginLeft="@dimen/p10"
+                        android:layout_marginRight="@dimen/p10"
+                        android:background="@drawable/rounded_button"
+                        android:text="@string/approve"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_reject"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/p40"
+                        android:layout_marginLeft="@dimen/p10"
+                        android:layout_marginRight="@dimen/p10"
+                        android:background="@drawable/rounded_button"
+                        android:text="@string/reject"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:indeterminateTint="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

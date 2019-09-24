@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/p50"
+            android:background="@drawable/bordered_tv"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:id="@+id/tv_option"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts18"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="@dimen/p25"
+                android:layout_height="@dimen/p25"
+                android:background="@drawable/ic_cross"
+                android:visibility="gone"
+                />
+
+
+            <ImageView
+                android:id="@+id/iv_info"
+                android:layout_width="@dimen/p40"
+                android:layout_height="@dimen/p40"
+                android:background="@drawable/ic_info"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/upload_dialouge"
+            android:layout_below="@id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/p10"
+            >
+            <TextView
+                android:id="@+id/tv_body"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/ts16" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/edittext_straight_border"
+                >
+
+                <Button
+                    android:id="@+id/btn_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:textColor="@color/colorPrimary"
+                    android:background="?selectableItemBackground"
+                    android:textAllCaps="false"
+                     />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary">
+                </View>
+
+                <Button
+                    android:id="@+id/btn_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:background="?selectableItemBackground"
+                     />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/p200"
+        android:layout_height="@dimen/p200"
+        android:src="@drawable/logo"
+        android:padding="@dimen/p20"
+        android:layout_margin="@dimen/p20"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_below="@id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/ic_email"
+        android:hint="@string/email"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        style="@style/FormEditText"/>
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/ic_password"
+        android:hint="@string/password"
+        android:singleLine="true"
+        android:inputType="numberPassword"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="@dimen/p5"
+        style="@style/FormEditText"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p40"
+        android:background="@drawable/rounded_button"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="@dimen/p10"
+        style="@style/FormButtons"
+        />
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_link_text"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:layout_below="@id/btn_login"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/p2"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

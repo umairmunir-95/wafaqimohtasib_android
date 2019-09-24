@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/p5"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/p5"
+    android:layout_margin="@dimen/p5">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/p8">
+
+            <TextView
+                android:id="@+id/tv_complaints_againts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/complaint_against"
+                android:textSize="@dimen/ts16"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tv_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_complaints_againts"
+                android:text="@string/subject"
+                android:textSize="@dimen/ts16"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_subject"
+                android:textSize="@dimen/ts16"
+                android:text="@string/complaints_status"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_date"
+                android:textSize="@dimen/ts16"
+                android:layout_alignParentRight="true"
+                android:text="@string/complaints_status"
+                android:textColor="@color/black"
+                />
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

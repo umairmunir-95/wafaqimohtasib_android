@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/common_header"/>
+
+    <GridView
+        android:id="@+id/grid"
+        android:layoutDirection="ltr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/p10"
+        android:numColumns="1"
+        android:background="@color/white"
+        tools:listitem="@layout/gv_dashboard"
+        android:layout_below="@id/common_header"/>
+</RelativeLayout>
