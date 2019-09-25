@@ -12,8 +12,12 @@ public class EmailConfig {
 //    public static final String AUTHORIZATION="Authorization";
 //    public static final String BEARER="Bearer";
 //    public static final String SENDER_NAME="Wafaqi Mohtasib";
-    public static final String EMIAL_FROM="wafaqimohtasibapp@gmail.com";
-    public static final String PASSWORD="mohsinimran2019";
+
+//    public static final String EMIAL_FROM="wafaqimohtasibapp@gmail.com";
+//    public static final String PASSWORD="mohsinimran2019";
+    public static final String EMIAL_FROM="support@dab.ae";
+    public static final String PASSWORD="Password1!";
+
     public static final String SUBJECT="Wafaqi Mohtasib | User Verification";
     public static final String MESSAGE="Your verification code is ";
 
