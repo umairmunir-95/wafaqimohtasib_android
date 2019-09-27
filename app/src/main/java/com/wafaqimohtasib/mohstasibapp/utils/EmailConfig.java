@@ -18,7 +18,7 @@ public class EmailConfig {
     public static final String EMIAL_FROM="support@dab.ae";
     public static final String PASSWORD="Password1!";
 
-    public static final String SUBJECT="Wafaqi Mohtasib | User Verification";
+    public static final String SUBJECT="Punjab Mohtasib | User Verification";
     public static final String MESSAGE="Your verification code is ";
 
 }

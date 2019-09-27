@@ -103,6 +103,7 @@ public class DashboardActivity extends AppCompatActivity {
                 sharedPreferencesHelper.setString(getResources().getString(R.string.address),"");
                 sharedPreferencesHelper.setString(getResources().getString(R.string.user_type),"");
                 sharedPreferencesHelper.setString(getResources().getString(R.string.islogged_in),"false");
+                sharedPreferencesHelper.clearPreferenceStore();
                 startActivity(new Intent(DashboardActivity.this,LoginActivity.class));
             }
         });

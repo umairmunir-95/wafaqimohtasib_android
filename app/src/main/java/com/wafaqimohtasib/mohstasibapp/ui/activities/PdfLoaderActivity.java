@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.github.barteksc.pdfviewer.PDFView;
 import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener;
 import com.github.barteksc.pdfviewer.listener.OnPageChangeListener;
@@ -21,7 +23,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class PdfLoaderActivity extends Activity implements OnPageChangeListener, OnLoadCompleteListener {
+public class PdfLoaderActivity extends AppCompatActivity implements OnPageChangeListener, OnLoadCompleteListener {
 
     private Integer pageNumber = 0;
     private String pdfFileName;

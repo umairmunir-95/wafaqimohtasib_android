@@ -12,4 +12,3 @@ public class App  extends Application {
     public static final String CREATE_COMPLAINT="complaints/add";
     public static final String GET_USER_COMPLAINTS="complaints/";
 }
-
