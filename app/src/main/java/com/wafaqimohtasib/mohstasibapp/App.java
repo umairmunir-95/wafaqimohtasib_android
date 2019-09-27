@@ -3,7 +3,7 @@ package com.wafaqimohtasib.mohstasibapp;
 import android.app.Application;
 
 public class App  extends Application {
-    public static final String BASE_URL=" https://62285301.ngrok.io";
+    public static final String BASE_URL="http://1125dae2.ngrok.io";
     public static final String REGISTRATION="users/add";
     public static final String LOGIN="users/login/";
     public static final String LIST_ALL_CITIES="cities/listAllCities";
